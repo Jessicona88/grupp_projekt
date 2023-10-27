@@ -49,10 +49,11 @@ def books():
         author = random_book['authors'][0]['name']
         downloads_number = random_book['download_count']
         read_link = random_book['formats']['text/html']
+        cover = random_book['formats']['image/jpeg']
 
         
 
     else:
         title = "Boken misslyckades med att laddas!"
 
-    return render_template('books.html', title=title, author=author, downloads_number=downloads_number, read_link=read_link)
+    return render_template('books.html', title=title, author=author, downloads_number=downloads_number, read_link=read_link, cover=cover)
