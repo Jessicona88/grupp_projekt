@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div>
+        <h3>En bök att läsa 👑</h3>
+        <div class="container">
+            <div class="alert alert-primary" role="alert">
+                <p>Titel: {{ title }}</p>
+                <p>Förtfattare: {{ author }}</p>
+                <p>{{ downloads_number }} personer har laddat ned böcken!</p>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <p><a href="{{ read_link }}">Ladda ned nu!</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
